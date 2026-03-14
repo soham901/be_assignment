@@ -7,7 +7,7 @@ GET {{baseUrl}}/api/articles/
 GET {{baseUrl}}/api/articles/?page=3
 
 ### articles from page5
-GET {{baseUrl}}/api/articles/?page=5
+GET {{baseUrl}}/api/articles/?page=4
 
 ### invalid page number
 GET {{baseUrl}}/api/articles/?page=abc
