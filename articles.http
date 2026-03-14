@@ -3,10 +3,16 @@
 ### all articles
 GET {{baseUrl}}/api/articles/
 
-### articles from page3
+### custom page size
+GET {{baseUrl}}/api/articles/?page_size=5
+
+### max page size capped at 2
+GET {{baseUrl}}/api/articles/?page_size=2
+
+### articles from page 3
 GET {{baseUrl}}/api/articles/?page=3
 
-### articles from page5
+### articles from page 4
 GET {{baseUrl}}/api/articles/?page=4
 
 ### invalid page number
@@ -14,3 +20,6 @@ GET {{baseUrl}}/api/articles/?page=abc
 
 ### out of range page
 GET {{baseUrl}}/api/articles/?page=999
+
+### invalid page size falls back to default page size
+GET {{baseUrl}}/api/articles/?page_size=abc
