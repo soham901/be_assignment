@@ -1,9 +1,5 @@
 @baseUrl = http://localhost:8000
 
-# python manage.py migrate
-# python manage.py loaddata core/fixtures/articles.json
-# python manage.py runserver
-
 ### all articles
 GET {{baseUrl}}/api/articles/
 
